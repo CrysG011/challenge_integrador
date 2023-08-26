@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP | Funkoshop</title>
+</head>
+
+<body>
+    <script defer src="/index.js"></script>
+    <header class="header">
+        <div id="header" class="header">
+            <!-- El contenido de header.html se cargará aquí -->
+        </div>
+    </header>
+    <main class="main">
+        <aside class="aside">
+            <form class="search-form">
+                <label class="search-form__label" for="search">BUSCAR</label>
+                <input class="search-form__input" type="text" id="search" name="search"
+                    placeholder="Ingrese término de búsqueda" />
+            </form>
+            <form class="sort-form">
+                <label class="sort-form__label" for="sort">ORDENAR POR</label>
+                <select class="sort-form__select" id="sort" name="sort">
+                    <option value="asc">Menor a Mayor</option>
+                    <option value="desc">Mayor a Menor</option>
+                </select>
+            </form>
+            <form class="price-form">
+                <label class="price-form__label">PRECIO</label>
+                <div class="price-form__input-group">
+                    <label class="price-form__sublabel" for="min-price">MIN</label>
+                    <input class="price-form__input" type="number" id="min-price" name="min-price" placeholder="0" />
+                </div>
+                <div class="price-form__input-group">
+                    <label class="price-form__sublabel" for="max-price">MAX</label>
+                    <input class="price-form__input" type="number" id="max-price" name="max-price" placeholder="9999" />
+                </div>
+            </form>
+            <form class="filter-form">
+                <label class="filter-form__label">FILTRAR</label>
+                <div class="filter-form__checkbox-group">
+                    <input class="filter-form__checkbox" type="checkbox" id="new" name="new" />
+                    <label class="filter-form__checkbox-label" for="new">NUEVOS</label>
+                </div>
+                <div class="filter-form__checkbox-group">
+                    <input class="filter-form__checkbox" type="checkbox" id="offers" name="offers" />
+                    <label class="filter-form__checkbox-label" for="offers">OFERTAS</label>
+                </div>
+                <div class="filter-form__checkbox-group">
+                    <input class="filter-form__checkbox" type="checkbox" id="special-edition" name="special-edition" />
+                    <label class="filter-form__checkbox-label" for="special-edition">EDICIÓN ESPECIAL</label>
+                </div>
+                <div class="filter-form__checkbox-group">
+                    <input class="filter-form__checkbox" type="checkbox" id="favorites" name="favorites" />
+                    <label class="filter-form__checkbox-label" for="favorites">FAVORITOS</label>
+                </div>
+            </form>
+        </aside>
+        <div class="news-container" id="news1"></div>
+        <div class="news-container" id="news2"></div>
+        <div class="news-container" id="news3"></div>
+        <div class="pagination">
+            <a href="#" class="page-link">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+        </div>
+    </main>
+    <footer>
+        <div id="footer" class="footer">
+            <!-- El contenido de footer.html se cargará aquí -->
+        </div>
+    </footer>
+</body>
+
+</html>
