@@ -1,49 +1,35 @@
 <section class="news-container">
+  <script defer src="/index.js"></script>
   <ul>
     <li>
-      <article>
-        <a href="">
-          <picture>
-            <img src="/img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de un Stormtrooper" />
-          </picture>
-          <div>
-            <p>STAR WARS</p>
-            <h4>STORMTROOPER LIGHTSABER</h4>
-            <p>$ 1799,99.-</p>
-            <p>3 CUOTAS SIN INTERÉS</p>
-          </div>
-        </a>
-      </article>
+      <!-- Incluyendo el componente "Card" para el artículo 1 -->
+      <include src="/components/card.html">
+        <with-param name="IMAGEN_URL" value="/img/star-wars/trooper-1.webp" />
+        <with-param name="CATEGORÍA" value="STAR WARS" />
+        <with-param name="TÍTULO" value="STORMTROOPER LIGHTSABER" />
+        <with-param name="PRECIO" value="$ 1799,99.-" />
+        <with-param name="PAGO" value="3 CUOTAS SIN INTERÉS" />
+      </include>
     </li>
     <li>
-      <article>
-        <a href="">
-          <picture>
-            <img src="/img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto" />
-          </picture>
-          <div>
-            <p>POKEMON</p>
-            <h4>PIDGEOTTO</h4>
-            <p>$ 1799,99.-</p>
-            <p>3 CUOTAS SIN INTERÉS</p>
-          </div>
-        </a>
-      </article>
+      <!-- Incluyendo el componente "Card" para el artículo 2 -->
+      <include src="/components/card.html">
+        <with-param name="IMAGEN_URL" value="/img/pokemon/pidgeotto-1.webp" />
+        <with-param name="CATEGORÍA" value="POKEMON" />
+        <with-param name="TÍTULO" value="PIDGEOTTO" />
+        <with-param name="PRECIO" value="$ 1799,99.-" />
+        <with-param name="PAGO" value="3 CUOTAS SIN INTERÉS" />
+      </include>
     </li>
     <li>
-      <article>
-        <a href="">
-          <picture>
-            <img src="/img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood" />
-          </picture>
-          <div>
-            <p>HARRY POTTER</p>
-            <h4>LUNA LOVEGOOD LION MASK</h4>
-            <p>$ 1799,99.-</p>
-            <p>3 CUOTAS SIN INTERÉS</p>
-          </div>
-        </a>
-      </article>
+      <!-- Incluyendo el componente "Card" para el artículo 3 -->
+      <include src="/components/card.html">
+        <with-param name="IMAGEN_URL" value="/img/harry-potter/luna-1.webp" />
+        <with-param name="CATEGORÍA" value="HARRY POTTER" />
+        <with-param name="TÍTULO" value="LUNA LOVEGOOD LION MASK" />
+        <with-param name="PRECIO" value="$ 1799,99.-" />
+        <with-param name="PAGO" value="3 CUOTAS SIN INTERÉS" />
+      </include>
     </li>
   </ul>
 </section>
