@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+</head>
+
+<body>
+    <script defer src="/pages/admin/admin.js"></script>
+    <header class="header">
+        <div id="headeradmin" class="headeradmin">
+            <!-- El contenido de header.html se cargará aquí -->
+        </div>
+    </header>
+    <main class="mainadmin">
+        <div class="search-bar">
+            <img src="/img/icons/search_icon.svg" alt="Icono de búsqueda" class="search-icon" />
+            <input type="text" id="searchInput" placeholder="código, nombre o categoría" />
+        </div>
+        <div class="product-list">
+            <div class="product-list__add">
+                <h2>LISTADO DE PRODUCTOS</h2>
+                <button class="product-list__add-button">AGREGAR<span class="plus-sign">+</span></button>
+            </div>
+            <table class="product-list__table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Nombre del Producto</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí puedes agregar las filas de productos -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div id="footeradmin" class="footeradmin">
+            <!-- El contenido de footer.html se cargará aquí -->
+        </div>
+    </footer>
+</body>
+
+</html>
