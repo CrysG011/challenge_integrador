@@ -5,22 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARRITO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <script defer src="/pages/carro/carro.js"></script>
+
     <header class="header">
-        <div id="header" class="header">
-            <!-- El contenido de header.html se cargará aquí -->
-        </div>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="#">
+                    <img src="/img/branding/logo_light_horizontal.svg" alt="Logo de Funkoshop" />
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=/pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__carro" href="/pages/carro/carro.html"><img src="/img/icons/cart-icon.svg"
+                            alt="CARRITO" /></a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main class="maincarro">
-        <h4>CARRITO DE COMPRAS</h4>
-        <div class="carro-items">
-            <!-- Aquí se cargarán los artículos del carrito, utilizando la clase "card-item" -->
-        </div>
+        <h1>CARRITO DE COMPRAS</h1>
+        <ul>
+            <li>DETALLE DEL PRODUCTO</li>
+            <li>CANTIDAD</li>
+            <li>TOTAL</li>
+        </ul>
+        <article class="card-item">
+            <picture class="card-item__image">
+                <img src="/img/star-wars/baby-yoda-1.webp" alt="BABY YODA BLUEBALL" />
+            </picture>
+            <div class="card-item__content">
+                <h4 class="card-item__title">BABY YODA BLUEBALL</h4>
+                <p class="card-item__category">STAR WARS</p>
+                <p class="card-item__price">precio: $1799,99</p>
+
+                <div class="card-item__quantity">
+                    <!-- Agregar el campo para la cantidad y los botones de incremento y decremento -->
+                </div>
+
+                <p class="card-item__total">$ 3599,98</p>
+
+                <button class="card-item__cancel"><i class="fa-regular fa-circle-xmark"
+                        style="color: #f24e1e;"></i></button>
+            </div>
+        </article>
         <section class="carro-resumen">
-            <h5>RESUMEN</h5>
+            <h2>RESUMEN</h2>
             <div class="resumen-elemento">
                 <p>CANTIDAD DE ELEMENTOS</p>
                 <p>1</p>
@@ -41,9 +84,19 @@
         </section>
     </main>
     <footer>
-        <div id="footer" class="footer">
-            <!-- El contenido de footer.html se cargará aquí -->
-        </div>
+        <section class="footer">
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__li"><a href="/pages/shop/shop.html">SHOP</a></li>
+                    <li class="footer__li"><a href="/pages/login.html">INGRESAR</a></li>
+                    <li class="footer__li"><a href="/pages/contact.html">CONTACTO</a></li>
+                </ul>
+                <picture class="footer__isotype">
+                    <img src="/img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>
 

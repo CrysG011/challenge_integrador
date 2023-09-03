@@ -10,11 +10,25 @@
 <body>
     <script defer src="/pages/admin/login/login.js"></script>
     <header class="headeradmin">
-        <div id="headeradmin" class="headeradmin">
-            <!-- El contenido de headeradmin.html se cargará aquí -->
-        </div>
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="/index.html">
+                    <img src="/img/branding/logo_light_horizontal.svg" alt="Logo de Funkoshop" />
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/index.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
     <main class="mainadmin">
         <div class="login-container">
             <h2>INGRESAR A MI CUENTA</h2>
@@ -35,11 +49,23 @@
             <a href="#">Olvidé mi contraseña</a>
         </div>
     </main>
-
     <footer>
-        <div id="footeradmin" class="footeradmin">
-            <!-- El contenido de footeradmin.html se cargará aquí -->
-        </div>
+        <section class="footeradmin">
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__li"><a href="/pages/shop/shop.html">SHOP</a></li>
+                    <li class="footer__li">
+                        <a href="/pages/register/register.html">REGISTRARSE</a>
+                    </li>
+                    <li class="footer__li"><a href="/pages/login/login.html">INGRESAR</a></li>
+                    <li class="footer__li"><a href="/pages/contact.html">CONTACTO</a></li>
+                </ul>
+                <picture class="footer__isotype">
+                    <img src="/img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>
 
