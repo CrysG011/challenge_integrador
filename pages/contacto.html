@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Funkoshop</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <picture class="navbar__logo">
+                <a href="#">
+                    <img src="/img/branding/logo_light_horizontal.svg" alt="Logo de Funkoshop" />
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/admin/login/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__carro" href="/pages/carro/carro.html"><img src="/img/icons/cart-icon.svg"
+                            alt="CARRITO" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contacto">
+        <section class="contacto">
+            <h1>Contacto</h1>
+            <p>¿Tienes alguna pregunta o comentario? ¡Estamos aquí para ayudarte!</p>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">E-Mail:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__li"><a href="/pages/shop/shop.html">SHOP</a></li>
+                    <li class="footer__li"><a href="/pages/admin/login/login.html">INGRESAR</a></li>
+                    <li class="footer__li"><a href="/pages/contact.html">CONTACTO</a></li>
+                </ul>
+                <picture class="footer__isotype">
+                    <img src="/img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+</body>
+
+</html>
