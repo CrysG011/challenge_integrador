@@ -43,22 +43,11 @@
 @font-face {
   font-family: var(--font-inter-family);
   src: url(../fonts/Inter-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: var(--font-inter-family);
-  src: url(../fonts/Inter-ExtraBold.ttf);
-  font-weight: bold;
-  font-style: normal;
 }
 
 @font-face {
   font-family: var(--font-raleway-family);
   src: url(../fonts/Raleway-Regular.ttf);
-  font-weight: bold;
-  font-style: normal;
 }
 
 *,
