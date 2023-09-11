@@ -2,7 +2,7 @@
 
 ## Grupo 10 del curso Fullstack Node.js del programa Codo a Codo 4.0
 
-### Tareas a desarrollar
+### Tareas a desarrollar ¡VER Sección Proyectos de este repositorio!
 
 - Misión 1: Crear estructura HTML de las diferentes vistas del proyecto alojado en Figma.
 - Misión 2: Maquetar y estilar mediante CSS siguiendo el diseño en Figma.
