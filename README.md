@@ -12,5 +12,4 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Icono de Git](https://github.com/github/explore/raw/main/topics/git/git.png)
-![Icono de GitHub](https://github.com/github/explore/raw/main/topics/github/github.png)
+![Figma](https://mir-s3-cdn-cf.behance.net/project_modules/1400/8a045799766163.5efa31210a588.png)
