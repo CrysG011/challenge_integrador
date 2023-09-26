@@ -5,93 +5,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHOP | Funkoshop</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500&family=Quicksand:wght@300;500;700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="./shop.css">
 </head>
 
 <body>
 
     <header class="header">
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="#">
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de Funkoshop" />
-                </a>
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./shop.html">SHOP <iconify-icon
-                            icon="mdi:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">LLaveros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../contacto.html">CONTACTO</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="../admin/login/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__carro" href="../../pages/carro/carro.html"><img
-                            src="../../img/icons/cart-icon.svg" alt="CARRITO" /></a>
-                </li>
-            </ul>
+        <nav class="header__nav">
+  
+            <div class="header__left">
+                <img src="../../img/branding/logo_light_horizontal.svg" alt="Logo de Funkoshop" class="header__img">
+                </div>
+        
+            <div class="header__right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <ul class="header__ul">
+                    <li class="header__li">
+                        <a href="/">SHOP&#160
+                            <img src="../../img/icons/arrow.svg" alt="arrow">
+                        </a>
+                    </li>
+                    <li class="header__li"><a href="/">CONTACTO</a></li>
+                    <li class="header__li"><a href="/">LOGIN</a></li>
+                    <li class="header__li--cart">
+                    <a href="/">
+                        <img src="../../img/icons/cart-icon.svg" alt="CARRITO">
+                        <div>3</div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+  
     <main class="main">
         <aside class="aside">
-            <form class="search-form">
-                <label class="search-form__label" for="search">BUSCAR</label>
-                <input class="search-form__input" type="text" id="search" name="search"
-                    placeholder="Ingrese término de búsqueda" />
-            </form>
-            <form class="sort-form">
-                <label class="sort-form__label" for="sort">ORDENAR POR</label>
-                <select class="sort-form__select" id="sort" name="sort">
-                    <option value="asc">Menor a Mayor</option>
-                    <option value="desc">Mayor a Menor</option>
-                </select>
-            </form>
-            <form class="price-form">
-                <label class="price-form__label">PRECIO</label>
-                <div class="price-form__input-group">
-                    <label class="price-form__sublabel" for="min-price">MIN</label>
-                    <input class="price-form__input" type="number" id="min-price" name="min-price" placeholder="0" />
-                </div>
-                <div class="price-form__input-group">
-                    <label class="price-form__sublabel" for="max-price">MAX</label>
-                    <input class="price-form__input" type="number" id="max-price" name="max-price" placeholder="9999" />
-                </div>
-            </form>
-            <form class="filter-form">
-                <label class="filter-form__label">FILTRAR</label>
-                <div class="filter-form__checkbox-group">
-                    <input class="filter-form__checkbox" type="checkbox" id="new" name="new" />
-                    <label class="filter-form__checkbox-label" for="new">NUEVOS</label>
-                </div>
-                <div class="filter-form__checkbox-group">
-                    <input class="filter-form__checkbox" type="checkbox" id="offers" name="offers" />
-                    <label class="filter-form__checkbox-label" for="offers">OFERTAS</label>
-                </div>
-                <div class="filter-form__checkbox-group">
-                    <input class="filter-form__checkbox" type="checkbox" id="special-edition" name="special-edition" />
-                    <label class="filter-form__checkbox-label" for="special-edition">EDICIÓN ESPECIAL</label>
-                </div>
-                <div class="filter-form__checkbox-group">
-                    <input class="filter-form__checkbox" type="checkbox" id="favorites" name="favorites" />
-                    <label class="filter-form__checkbox-label" for="favorites">FAVORITOS</label>
-                </div>
-            </form>
+                  <form class="search-form">
+                      <label class="search-form__label" for="search">BUSCAR</label>
+                      <input class="search-form__input" type="text" id="search" name="search"
+                          placeholder="Item o categoría" />
+                  </form>
+                  <form class="sort-form">
+                      <label class="sort-form__label" for="sort">ORDENAR POR</label>
+                      <select class="sort-form__select" id="sort" name="sort">
+                          <option value="asc">Menor a mayor</option>
+                          <option value="desc">Mayor a menor</option>
+                      </select>
+                  </form>
+               <div class="price-and-filter-form-container">
+                  <form class="price-form">
+                      <label class="price-form__label">PRECIO</label>
+                      <div class="price-form__input-group-container">
+                      <div class="price-form__input-group">
+                          <label class="price-form__sublabel" for="min-price">MIN</label>
+                          <input class="price-form__input" type="number" id="min-price" name="min-price" placeholder="0" />
+                      </div>
+                      <div class="price-form__input-group">
+                          <label class="price-form__sublabel" for="max-price">MAX</label>
+                          <input class="price-form__input" type="number" id="max-price" name="max-price" placeholder="0" />
+                      </div>
+                  </div>
+                  </form>
+                  <form class="filter-form">
+                      <label class="filter-form__label">FILTRAR</label>
+                      <div class="filter-form__checkbox-list">
+                      <div class="filter-form__checkbox-group">
+                          <input class="filter-form__checkbox" type="checkbox" id="new" name="new" />
+                          <label class="filter-form__checkbox-label" for="new">NUEVOS</label>
+                      </div>
+                      <div class="filter-form__checkbox-group">
+                          <input class="filter-form__checkbox" type="checkbox" id="offers" name="offers" />
+                          <label class="filter-form__checkbox-label" for="offers">OFERTAS</label>
+                      </div>
+                      <div class="filter-form__checkbox-group">
+                          <input class="filter-form__checkbox" type="checkbox" id="special-edition" name="special-edition" />
+                          <label class="filter-form__checkbox-label" for="special-edition">EDICIÓN ESPECIAL</label>
+                      </div>
+                      <div class="filter-form__checkbox-group">
+                          <input class="filter-form__checkbox" type="checkbox" id="favorites" name="favorites" />
+                          <label class="filter-form__checkbox-label" for="favorites">FAVORITOS</label>
+                      </div>
+                      </div>
+                      </div>
+                  </form>
+               </div>
         </aside>
         <section class="news">
+            <article class="news__card">
+                  <a href="#">
+                      <picture>
+                          <img src="../../img/star-wars/trooper-1.webp" alt="STAR WARS STORMTROOPER" />
+                          <div class="cucarda">NUEVO</div>
+                      </picture>
+                      <div>
+                          <p>STAR WARS</p>
+                          <h4>STORMTROOPER LIGHTSABER</h4>
+                          <p>$1799,99</p>
+                          <p>3 CUOTAS SIN INTERÉS</p>
+                      </div>
+                  </a>
+            </article>
+            <article class="news__card">
+                  <a href="#">
+                      <picture>
+                          <img src="../../img/pokemon/pidgeotto-1.webp" alt="Pokemon PIDGEOTTO" />
+                          <div class="cucarda">NUEVO</div>
+                      </picture>
+                      <div>
+                          <p>POKEMON</p>
+                          <h4>PIDGEOTTO</h4>
+                          <p>$1799,99</p>
+                          <p>3 CUOTAS SIN INTERÉS</p>
+                      </div>
+                  </a>
+            </article>
+            <article class="news__card">
+                  <a href="#">
+                      <picture>
+                          <img src="../../img/harry-potter/luna-1.webp" alt="HARRY POTTER LUNA LOVEGOOD" />
+                          <div class="cucarda">NUEVO</div>
+                      </picture>
+                      <div>
+                          <p>HARRY POTTER</p>
+                          <h4>LUNA LOVEGOOD LION MASK</h4>
+                          <p>$1799,99</p>
+                          <p>3 CUOTAS SIN INTERÉS</p>
+                      </div>
+                  </a>
+            </article>
             <article class="news__card">
                 <a href="#">
                     <picture>
@@ -131,24 +176,82 @@
                     </div>
                 </a>
             </article>
-        </section>
+  
+            <article class="news__card">
+              <a href="#">
+                  <picture>
+                      <img src="../../img/star-wars/trooper-1.webp" alt="STAR WARS STORMTROOPER" />
+                  </picture>
+                  <div>
+                      <p>STAR WARS</p>
+                      <h4>STORMTROOPER LIGHTSABER</h4>
+                      <p>$1799,99</p>
+                      <p>3 CUOTAS SIN INTERÉS</p>
+                  </div>
+              </a>
+           </article>
+           <article class="news__card">
+              <a href="#">
+                  <picture>
+                      <img src="../../img/pokemon/pidgeotto-1.webp" alt="Pokemon PIDGEOTTO" />
+                  </picture>
+                  <div>
+                      <p>POKEMON</p>
+                      <h4>PIDGEOTTO</h4>
+                      <p>$1799,99</p>
+                      <p>3 CUOTAS SIN INTERÉS</p>
+                  </div>
+              </a>
+           </article>
+           <article class="news__card">
+              <a href="#">
+                  <picture>
+                      <img src="../../img/harry-potter/luna-1.webp" alt="HARRY POTTER LUNA LOVEGOOD" />
+                  </picture>
+                  <div>
+                      <p>HARRY POTTER</p>
+                      <h4>LUNA LOVEGOOD LION MASK</h4>
+                      <p>$1799,99</p>
+                      <p>3 CUOTAS SIN INTERÉS</p>
+                  </div>
+              </a>
+           </article>
+        </section>   
     </main>
-    <footer>
-        <section class="footer">
-            <nav class="navbar container">
-                <ul class="navbar__items">
-                    <li class="navbar__item"><a class="navbar__link" href="./shop.html">SHOP</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="../admin/login/login.html">INGRESAR</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="../contacto.html">CONTACTO</a></li>
+      <div class="pagination-container">
+          <div class="pagination">
+              <ul>
+                  <a href="#"><li class="pagination__li--back"><img src="../../img/icons/arrow.svg" alt=""></li></a>
+                  <a href="#"><li class="pagination__li--selected">1</li></a>
+                  <a href="#"><li class="pagination__li">2</li></a>
+                  <a href="#"><li class="pagination__li">...</li></a>
+                  <a href="#"><li class="pagination__li">9</li></a>
+                  <a href="#"><li class="pagination__li">10</li></a>
+                  <a href="#"><li class="pagination__li--next"><img src="../../img/icons/arrow.svg" alt=""></li></a>
+              </ul>
+          </div>  
+      </div>
+  
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__left">
+                <ul>
+                  <li><a href="/">SHOP</a></li>
+                  <li><a href="/">INGRESAR</a></li>
+                  <li><a href="/">CONTACTO</a></li>
                 </ul>
-                <picture class="footer__isotype">
-                    <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
-                </picture>
-            </nav>
-        </section>
-        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+            </div>
+            <div class="footer__right">
+                    <img src="../../img/branding/isotype.svg" alt="logo" class="logo">
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <div>
+              <p>All rights reserved 2023 - Funkoshop &copy</p>
+            </div> 
+        </div>
     </footer>
-    <script defer src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-</body>
+  
+  </body>
 
 </html>
