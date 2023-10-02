@@ -1,6 +1,6 @@
 :root {
-  --font-inter-family: "Inter";
-  --font-raleway-family: "Raleway";
+  --font-inter-family: "Inter", sans-serif;
+  --font-raleway-family: "Raleway", sans-serif;
 
   --primary-solid: #ff3333;
   --primary-900: rgba(255, 51, 51, 0.9);
@@ -38,16 +38,13 @@
   --spacing-16: 1.6rem;
   --spacing-12: 1.2rem;
   --spacing-8: 0.8rem;
-}
 
-@font-face {
-  font-family: var(--font-inter-family);
-  src: url("../fonts/Inter-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: var(--font-raleway-family);
-  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  --white: #FAFAFF;
+  --black: #1F1F1F;
+  --black-2: #30343F;
+  --blue: #1D84B5;
+  --red-1: #FF1654;
+  --red-2: #FF3333;
 }
 
 *,
@@ -65,6 +62,39 @@ html {
   color: var(--dark-solid);
 }
 
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+img,
+picture,
+figure {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-family: var(--font-inter-family);
+}
+
 a {
   text-decoration: none;
   font-family: inherit;
@@ -77,45 +107,41 @@ footer {
   color: var(--ligth-font-solid);
 }
 
-ul,
-ol,
-li {
-  list-style-type: none;
-}
-
-p {
-  font-size: 1.8em;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
 .container {
-  max-width: 78rem;
+  max-width: 80%;
   margin: 0 auto;
 }
 
 .header {
   background-color: var(--dark-bg-solid);
   padding: var(--spacing-36);
+  width: 100%;
+  height: auto;
+  display: flex;
+  z-index: 1;
+  position: fixed;
 }
 
 .navbar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
   color: var(--light-bg-solid);
 }
 
 .navbar__logo {
-  max-width: 18.75rem;
+  display: flex;
+  max-width: 30rem;
+}
+
+.navbar__main {
+  display: flex;
 }
 
 .navbar__menu {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-20);
 }
 
@@ -151,7 +177,6 @@ img {
   position: absolute;
   background-color: var(--dark-bg-solid);
   width: 18.75rem;
-  z-index: 3;
 }
 
 .submenu__link {
@@ -169,32 +194,44 @@ img {
   background-color: var(--primary-900);
 }
 
+.button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  /* Mostrar el logotipo menu solo en pantallas móviles */
+  .button {
+    display: block;
+    width: 3rem;
+    height: fit-content;
+    margin-left: 2rem;
+    align-self: center;
+  }
+}
+
 .hero {
-  background-image: url(../img/funkos-banner.webp);
+  background-image: url(../img/funkos-banner.png);
   padding: var(--spacing-128);
   background-size: cover;
   background-attachment: fixed;
-  background-position: top;
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  backdrop-filter: blur(2px) brightness(0.9);
+  background-position: bottom;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-20);
+  gap: var(--spacing-12);
   align-items: start;
-  position: relative;
-  z-index: 2;
+  margin: 11rem auto 0 0;
+  width: 100%;
 }
 
 .hero__title {
@@ -225,11 +262,23 @@ img {
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
+  margin-top: var(--spacing-28);
 }
 
 .hero__link:hover {
   background-color: var(--primary-900);
   color: var(--ligth-font-solid);
+}
+
+@media (max-width:748px) {
+  .hero {
+    justify-items: center;
+    font-size: .7em;
+  }
+
+  .hero__content {
+    margin: 0;
+  }
 }
 
 .collection {
@@ -247,6 +296,7 @@ img {
   flex-direction: column;
   gap: var(--spacing-24);
   align-items: start;
+  width: 100%;
 }
 
 .collection__title {
@@ -367,7 +417,14 @@ img {
 
 .footer {
   background-color: var(--dark-bg-solid);
-  padding: var(--spacing-68);
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  margin-top: var(--spacing-36);
+  width: 100%;
+}
+
+.footer__isotype {
+  max-width: 13rem;
 }
 
 .footer__copy {
