@@ -38,13 +38,6 @@
   --spacing-16: 1.6rem;
   --spacing-12: 1.2rem;
   --spacing-8: 0.8rem;
-
-  --white: #FAFAFF;
-  --black: #1F1F1F;
-  --black-2: #30343F;
-  --blue: #1D84B5;
-  --red-1: #FF1654;
-  --red-2: #FF3333;
 }
 
 *,
@@ -127,6 +120,8 @@ footer {
   width: 100%;
   justify-content: space-between;
   color: var(--light-bg-solid);
+  padding-left: var(--spacing-36);
+  padding-right: var(--spacing-36);
 }
 
 .navbar__logo {
@@ -198,23 +193,8 @@ footer {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .navbar__menu {
-    display: none;
-  }
-
-  /* Mostrar el logotipo menu solo en pantallas móviles */
-  .button {
-    display: block;
-    width: 3rem;
-    height: fit-content;
-    margin-left: 2rem;
-    align-self: center;
-  }
-}
-
 .hero {
-  background-image: url(../img/funkos-banner.png);
+  background-image: url(../img/funkosbanner.webp);
   padding: var(--spacing-128);
   background-size: cover;
   background-attachment: fixed;
@@ -227,21 +207,20 @@ footer {
 
 .hero__content {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: var(--spacing-12);
   align-items: start;
   margin: 11rem auto 0 0;
-  width: 100%;
+  max-width: 100%;
+  font-family: var(--font-raleway-family);
 }
 
 .hero__title {
-  font-family: var(--font-raleway-family);
-  font-size: var(--font-jumbo);
   color: var(--ligth-font-solid);
+  font-size: var(--font-jumbo);
 }
 
 .hero__text {
-  font-family: var(--font-raleway-family);
   color: var(--ligth-font-solid);
   font-size: var(--font-medium);
 }
@@ -268,17 +247,6 @@ footer {
 .hero__link:hover {
   background-color: var(--primary-900);
   color: var(--ligth-font-solid);
-}
-
-@media (max-width:748px) {
-  .hero {
-    justify-items: center;
-    font-size: .7em;
-  }
-
-  .hero__content {
-    margin: 0;
-  }
 }
 
 .collection {
@@ -344,6 +312,7 @@ footer {
 }
 
 .slider__title {
+  display: flex;
   font-family: var(--font-raleway-family);
   font-size: var(--font-display);
 }
@@ -446,11 +415,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-
-  /* Estilos adicionales para hacerlo responsive */
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .contacto {
@@ -493,14 +457,61 @@ footer {
     padding: 10px 20px;
     cursor: pointer;
   }
+}
 
-  /* Estilos adicionales para hacerlo responsive */
-  @media (min-width: 768px) {
+/* Estilos adicionales para hacerlo responsive */
 
-    label,
-    input,
-    textarea {
-      grid-column: span 2;
-    }
+@media (max-width:748px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  /* Mostrar el logotipo menu solo en pantallas móviles */
+  .button {
+    display: block;
+    width: 3rem;
+    height: fit-content;
+    margin-left: 2rem;
+    align-self: center;
+  }
+
+  .hero {
+    justify-items: center;
+    align-items: center;
+    margin: 0 0 0 0;
+  }
+
+  .hero__content {
+    margin: 0 0 0 0;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .hero__link {
+    margin-top: 0;
+  }
+
+  .collection {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .collection__content {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .collection:nth-child(2) .collection__cover {
+    order: 1;
+  }
+
+  .slider__title {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .slider__items {
+    flex-flow: column wrap;
   }
 }
