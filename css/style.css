@@ -564,6 +564,7 @@ footer {
 
   .collection__cover {
     max-width: 80%;
+    justify-self: center;
   }
 
   .slider__title {
