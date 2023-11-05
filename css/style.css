@@ -821,3 +821,27 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
 }
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-24);
+  font-size: var(--font-small);
+  padding-top: var(--spacing-20);
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--spacing-12);
+}
+
+.contact-row {
+  display: flex;
+  align-items: start;
+}
