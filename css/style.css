@@ -774,3 +774,36 @@ footer {
   color: var(--secondary-solid);
   font-weight: bold;
 }
+
+.create-grid {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-gap: var(--spacing-24);
+  padding-top: 15em;
+  width: fit-content;
+}
+
+.create-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  font-size: var(--font-medium);
+}
+
+.create-row select {
+  padding: var(--spacing-8);
+}
+
+.create-title {
+  color: var(--dark-900);
+}
+
+.create-input {
+  max-width: 6em;
+}
+
+.desc-input {
+  width: 100%;
+  min-height: 20vh;
+  border: .5px solid var(--dark-300);
+}
