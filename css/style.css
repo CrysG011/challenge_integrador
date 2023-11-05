@@ -580,7 +580,7 @@ footer {
 }
 
 .mainadmin {
-  padding-top: 20rem;
+  padding-top: 13em;
 }
 
 .search-bar {
@@ -625,6 +625,111 @@ footer {
 .product-list__table {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
+}
+
+.product-list__tr {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing-36);
+  justify-items: start;
+  font-size: var(--font-medium);
+  max-width: 80%;
+}
+
+.product-list__tbody {
+  display: grid;
+  grid-template-columns: 1fr 4fr 6fr 4fr 1fr 1fr;
+  justify-content: center;
+  align-items: flex-end;
+  padding: var(--spacing-12) 0 var(--spacing-12) 0;
+  font-size: var(--font-small);
+}
+
+.editar,
+.eliminar {
+  width: 3rem;
+  justify-self: end;
+}
+
+.product-list__name {
+  padding-left: 9em;
+}
+
+.product-list__category {
+  padding-left: 9em;
+}
+
+.mainlogin {
+  padding-top: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainlogin__title {
+  font-size: var(--font-xlarge);
+  font-weight: bold;
+}
+
+.mainlogin__form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-24);
+  font-size: var(--font-medium);
+  padding-top: var(--spacing-20);
+}
+
+.log-input {
+  border-style: none;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+.form-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.3em;
+}
+
+.form-pass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.form-ingresar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-36);
+}
+
+.btn-ingresar {
+  background-color: var(--primary-solid);
+  border-style: none;
+  padding: var(--spacing-12) var(--spacing-24);
+  color: var(--ligth-font-solid);
+}
+
+.check-remenber {
+  padding: var(--spacing-12) var(--spacing-24);
+}
+
+.forgetpass {
+  justify-self: center;
+  padding: var(--spacing-24);
+  color: var(--secondary-solid);
+  font-weight: bold;
 }

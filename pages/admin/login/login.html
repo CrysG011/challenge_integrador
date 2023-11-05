@@ -30,49 +30,52 @@
             </ul>
         </nav>
     </header>
-    <main class="mainadmin">
+    <main class="mainlogin">
         <div class="login-container">
-            <h2>INGRESAR A MI CUENTA</h2>
-            <form>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="johndoe@correo.com" required>
-
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" placeholder="********" required>
-
-                <label for="remember">
-                    <input type="checkbox" id="remember" name="remember">
-                    Recordarme
-                </label>
-
-                <button type="submit">Ingresar</button>
+            <h2 class="mainlogin__title">INGRESAR A MI CUENTA</h2>
+            <form class="mainlogin__form">
+                <div class="form-mail">
+                    <label for="email">E-mail:</label>
+                    <input class="log-input" type="email" id="email" name="email" placeholder="johndoe@correo.com"
+                        required>
+                </div>
+                <div class="form-pass">
+                    <label for="password">Contraseña:</label>
+                    <input class="log-input" type="password" id="password" name="password" placeholder="********"
+                        required>
+                </div>
+                <div class="form-ingresar">
+                    <button class="btn-ingresar" type="submit">Ingresar</button>
+                    <label for="remember">
+                        <input class="check-remenber" type="checkbox" id="remember" name="remember">
+                        Recordarme
+                    </label>
+                </div>
             </form>
-            <a href="#">Olvidé mi contraseña</a>
+            <a class="forgetpass" href="#">Olvidé mi contraseña</a>
         </div>
     </main>
 
-    <footer>
-        <section class="footer">
-            <nav class="navbar container">
-                <ul class="navbar__items">
-                    <li class="navbar__item">
-                        <a class="navbar__link" href="../../../pages/shop/shop.html">SHOP</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link" href="../../../pages/register/register.html">REGISTRARSE</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link" href="../../../pages/login/login.html">INGRESAR</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a class="navbar__link" href="../../../pages/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-                <picture class="footer__isotype">
-                    <img src="../../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
-                </picture>
-            </nav>
-        </section>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__items">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../../pages/shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../../pages/register/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../../pages/login/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../../../pages/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture class="footer__isotype">
+                <img src="../../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+            </picture>
+        </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>

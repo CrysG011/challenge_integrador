@@ -37,47 +37,45 @@
         </div>
         <div class="product-list">
             <div class="product-list__add">
-                <h2>LISTADO DE PRODUCTOS</h2>
+                <h2 class="product-list__title">LISTADO DE PRODUCTOS</h2>
                 <button class="product-list__add-button">AGREGAR<span class="plus-sign">+</span></button>
             </div>
             <table class="product-list__table">
                 <thead>
-                    <tr>
+                    <tr class="product-list__tr">
                         <th>ID</th>
                         <th>Código</th>
-                        <th>Nombre del Producto</th>
-                        <th>Categoría</th>
+                        <th class="product-list__name">Nombre del Producto</th>
+                        <th class="product-list__category">Categoría</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>STW001002</td>
+                    <tr class="product-list__tbody">
+                        <td class="product-list__id">1</td>
+                        <td class="product-list__code">STW001002</td>
                         <td>Baby Yoda Blueball</td>
                         <td>STARS WARS</td>
-                        <td><img src="../../img/icons/edit_pencil.svg" alt="EDITAR"></td>
-                        <td><img src="../../img/icons/delete_trash.svg" alt="ELIMINAR"></td>
+                        <td><img src="../../img/icons/edit_pencil.svg" alt="EDITAR" class="editar"></td>
+                        <td><img src="../../img/icons/delete_trash.svg" alt="ELIMINAR" class="eliminar"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </main>
-    <footer>
-        <section class="footer">
-            <nav class="navbar container">
-                <ul class="navbar__items">
-                    <li class="footer__li"><a class="navbar__link" href="../shop/shop.html">SHOP</a></li>
-                    <li class="navbar__item">
-                        <a href="./register/register.html">REGISTRARSE</a>
-                    </li>
-                    <li class="navbar__item"><a class="navbar__link" href="./login/login.html">INGRESAR</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="../contacto.html">CONTACTO</a></li>
-                </ul>
-                <picture class="footer__isotype">
-                    <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
-                </picture>
-            </nav>
-        </section>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__items">
+                <li class="footer__li"><a class="navbar__link" href="../shop/shop.html">SHOP</a></li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./register/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item"><a class="navbar__link" href="./login/login.html">INGRESAR</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="../contacto.html">CONTACTO</a></li>
+            </ul>
+            <picture class="footer__isotype">
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+            </picture>
+        </nav>
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
 </body>
