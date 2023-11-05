@@ -666,6 +666,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--font-inter-family);
 }
 
 .login-container {
@@ -677,7 +678,15 @@ footer {
 
 .mainlogin__title {
   font-size: var(--font-xlarge);
-  font-weight: bold;
+  font-weight: 700;
+  color: var(--dark-900);
+}
+
+.mainlogin__subtitle {
+  font-size: var(--font-large);
+  font-weight: 100;
+  padding-top: var(--spacing-24);
+  padding-bottom: var(--spacing-8);
 }
 
 .mainlogin__form {
@@ -695,11 +704,25 @@ footer {
   border-bottom: 2px solid var(--primary-solid);
 }
 
+.form-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
+
 .form-mail {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3.3em;
+}
+
+.form-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10em;
 }
 
 .form-pass {
@@ -709,11 +732,29 @@ footer {
   gap: 1em;
 }
 
+.form-passcreate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+}
+
+.form-passrepeat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
 .form-ingresar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--spacing-36);
+}
+
+.form-ingresar span {
+  color: var(--secondary-solid);
 }
 
 .btn-ingresar {
@@ -723,7 +764,7 @@ footer {
   color: var(--ligth-font-solid);
 }
 
-.check-remenber {
+.check-remember {
   padding: var(--spacing-12) var(--spacing-24);
 }
 
