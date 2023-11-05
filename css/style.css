@@ -791,7 +791,15 @@ footer {
 }
 
 .create-row select {
+  display: flex;
   padding: var(--spacing-8);
+}
+
+.create-row img {
+  max-width: 10vw;
+  height: auto;
+  padding: var(--spacing-8);
+  border-bottom: 2px solid var(--primary-solid);
 }
 
 .create-title {
@@ -806,4 +814,10 @@ footer {
   width: 100%;
   min-height: 20vh;
   border: .5px solid var(--dark-300);
+}
+
+.img-edit {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
