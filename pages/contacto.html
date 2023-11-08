@@ -37,7 +37,7 @@
         <section class="contact">
             <h1 class="mainlogin__title">Contacto</h1>
             <p>¿Tienes alguna pregunta o comentario? ¡Estamos aquí para ayudarte!</p>
-            <form class="contact-form" action="procesar_formulario.php" method="post">
+            <form class="contact-form" action="procesar_formulario.php" method="post" novalidate>
                 <div class="contact-row">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -53,6 +53,7 @@
                 <button class="btn-ingresar" type="submit">Enviar</button>
             </form>
         </section>
+
     </main>
     <footer class="footer">
         <nav class="navbar">
