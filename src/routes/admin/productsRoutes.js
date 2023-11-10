@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 const controller = require("../../controllers/admin/productsController.js")
 
-router.get("/", controller.getProductListView)
+router.get("/", controller.getAdminView)
 
 router.get("/create", controller.getCreateProductView);
 

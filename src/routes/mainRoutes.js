@@ -5,7 +5,7 @@ const controller = require("../controllers/mainController")
 router.get("/", controller.index);
 
 router.get("/contact", (req, res) => {
-    res.send("Contact")
+    res.render("contacto")
 });
 
 router.get("/about", (req, res) => {

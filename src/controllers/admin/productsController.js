@@ -1,9 +1,9 @@
-const getProductListView = (get, res) => {
-    res.send("Listado de productos")
+const getAdminView = (get, res) => {
+    res.render("admin")
 }
 
 const getCreateProductView = (req, res) => {
-    res.send("Obtener vista de crear producto");
+    res.render("create");
 }
 
 const createProduct = (req, res) => {
@@ -11,7 +11,7 @@ const createProduct = (req, res) => {
 }
 
 const getEditProductView = (req, res) => {
-    res.send(`Obtener vista de modificar producto ${req.params.id}`);
+    res.render("edit");
 }
 
 const editProduct = (req, res) => {
@@ -27,7 +27,7 @@ const deleteProduct = (req, res) => {
 module.exports = {
     getCreateProductView,
     createProduct,
-    getProductListView,
+    getAdminView,
     getEditProductView,
     editProduct,
     deleteProduct

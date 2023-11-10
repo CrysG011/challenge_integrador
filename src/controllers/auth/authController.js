@@ -1,5 +1,5 @@
  const getLoginView = (req, res) => {
-    res.send("Obtener vista de login");
+    res.render("login");
 }
 
  const verifyLogin = (req, res) => {
@@ -7,7 +7,7 @@
 }
 
  const getRegisterView = (req, res) => {
-    res.send("Obtener vista de registro");
+    res.render("register");
 }
 
  const verifyRegister =  (req, res) => {
