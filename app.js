@@ -8,11 +8,11 @@ app.use(express.static(__dirname + "/public"))
 
 app.use("/", require("./src/routes/mainRoutes.js"))
 
-app.use("/admin", require("./src/routes/adminRoutes.js"))
+app.use("/admin", require("./src/routes/admin/productsRoutes.js"))
 
-app.use("/shop", require("./src/routes/shopRoutes.js"))
+app.use("/shop", require("./src/routes/shop/shopRoutes.js"))
  
-app.use("/auth", require("./src/routes/authRoutes.js"))
+app.use("/auth", require("./src/routes/auth/authRoutes.js"))
 
 app.use((req, res, next) => {
   res.status(404).send("La página no existe")
