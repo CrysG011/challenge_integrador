@@ -1,9 +1,9 @@
 const getShopView = (req, res) => {
-    res.send("Mostrar vista de shop")
+    res.render("shop")
 }
 
 const getItemView = (req, res) => {
-    res.send(`Mostrar vista de producto ${req.params.id}`)
+    res.render(`item`)
 }
 
 const addToCart = (req, res) => {
@@ -11,7 +11,7 @@ const addToCart = (req, res) => {
 }
 
 const getCartView = (req, res) => {
-    res.send("Mostrar vista de carrito")
+    res.render("carro")
 }
 
 const CreatePurchase = (req, res) => {
